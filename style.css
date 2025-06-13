@@ -203,6 +203,39 @@ footer {
     color: #f6c177;
     text-decoration: underline;
 }
+.vercel-highlight-link {
+    margin-bottom: 18px;
+    text-align: center;
+}
+.vercel-btn-highlight {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, #232136 0%, #393552 100%);
+    color: #f6c177;
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Source Code Pro', monospace;
+    font-size: 1.15em;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 14px 32px;
+    box-shadow: 0 4px 16px #23213644;
+    border: 2px solid #9ccfd8;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.15s;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
+}
+.vercel-btn-highlight:hover {
+    background: linear-gradient(90deg, #393552 0%, #232136 100%);
+    color: #232136;
+    border: 2px solid #f6c177;
+    transform: scale(1.04);
+    text-decoration: underline;
+}
+.vercel-btn-highlight svg {
+    filter: drop-shadow(0 0 4px #9ccfd8cc);
+}
 @media (max-width: 900px) {
     .dashboard {
         padding: 18px 2vw 18px 2vw;
