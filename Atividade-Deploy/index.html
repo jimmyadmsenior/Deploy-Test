@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Comparativo de Deploy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;900&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Quadro Comparativo de Deploy</h1>
+            <p>Escolha a melhor estratégia para cada cenário!</p>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>O que é Deploy?</h2>
+            <p>Deploy é o processo de disponibilizar uma aplicação ou site para acesso público, geralmente em um servidor ou serviço de hospedagem. Um bom deploy garante que seu projeto esteja acessível, seguro e performático para os usuários.</p>
+        </section>
+        <section class="guide">
+            <h2>Guia Rápido de Deploy</h2>
+            <ol>
+                <li>Escolha a plataforma de deploy adequada ao seu projeto.</li>
+                <li>Prepare os arquivos do seu site ou aplicação.</li>
+                <li>Configure o domínio (opcional).</li>
+                <li>Realize o upload ou conecte o repositório.</li>
+                <li>Teste o site publicado e monitore o funcionamento.</li>
+            </ol>
+        </section>
+        <section class="dashboard">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cenário</th>
+                            <th>Forma de Deploy Recomendada</th>
+                            <th>Justificativa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Startup com equipe de 5 devs</td>
+                            <td>Plataformas CI/CD 
+                                <a class="badge" href="https://vercel.com/" target="_blank">Vercel</a> 
+                                <a class="badge" href="https://www.netlify.com/" target="_blank">Netlify</a> 
+                                <a class="badge" href="https://www.heroku.com/" target="_blank">Heroku</a> 
+                                <a class="badge" href="https://github.com/features/actions" target="_blank">GitHub Actions</a>
+                            </td>
+                            <td>Automação, integração fácil com repositórios, escalabilidade e colaboração.</td>
+                        </tr>
+                        <tr>
+                            <td>Estudante publicando o TCC</td>
+                            <td>Hospedagem gratuita 
+                                <a class="badge" href="https://pages.github.com/" target="_blank">GitHub Pages</a> 
+                                <a class="badge" href="https://vercel.com/" target="_blank">Vercel</a> 
+                                <a class="badge" href="https://www.netlify.com/" target="_blank">Netlify</a>
+                            </td>
+                            <td>Fácil de usar, gratuito, ideal para projetos pequenos e portfólios.</td>
+                        </tr>
+                        <tr>
+                            <td>Empresas com sistema legado em PHP</td>
+                            <td>Hospedagem tradicional 
+                                <a class="badge" href="https://cpanel.net/" target="_blank">cPanel</a> 
+                                <a class="badge" href="https://www.hostgator.com/" target="_blank">HostGator</a> 
+                                <a class="badge" href="https://www.locaweb.com.br/" target="_blank">Locaweb</a> 
+                                ou <a class="badge" href="https://www.docker.com/" target="_blank">Docker em VPS</a>
+                            </td>
+                            <td>Compatibilidade com PHP, facilidade de migração, suporte a sistemas antigos.</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema complexo com vários desenvolvedores</td>
+                            <td>CI/CD avançado 
+                                <a class="badge" href="https://www.jenkins.io/" target="_blank">Jenkins</a> 
+                                <a class="badge" href="https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/" target="_blank">GitLab CI</a> 
+                                <a class="badge" href="https://aws.amazon.com/codepipeline/" target="_blank">AWS CodePipeline</a> 
+                                <a class="badge" href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+                            </td>
+                            <td>Automação robusta, deploys controlados, escalabilidade, integração com microserviços.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="tips">
+            <h2>Dicas e Melhores Práticas</h2>
+            <ul>
+                <li>Mantenha backups regulares do seu projeto.</li>
+                <li>Utilize HTTPS para segurança.</li>
+                <li>Automatize o deploy sempre que possível (CI/CD).</li>
+                <li>Monitore o desempenho e disponibilidade do site.</li>
+                <li>Documente o processo de deploy para sua equipe.</li>
+            </ul>
+        </section>
+        <section class="links">
+            <h2>Links Úteis</h2>
+            <ul>
+                <li><a href="https://vercel.com/docs" target="_blank">Documentação Vercel</a></li>
+                <li><a href="https://docs.netlify.com/" target="_blank">Documentação Netlify</a></li>
+                <li><a href="https://pages.github.com/" target="_blank">Guia GitHub Pages</a></li>
+                <li><a href="https://www.heroku.com/documentation" target="_blank">Documentação Heroku</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials" target="_blank">Tutoriais DigitalOcean</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido para comparação de estratégias de deploy - 2025<br>
+        Contato: seuemail@exemplo.com</p>
+        <div class="github-footer">
+            <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank" class="github-link">
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" style="vertical-align:middle; margin-right:8px;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                Veja no GitHub
+            </a>
+        </div>
+    </footer>
+    <script src="particles.js"></script>
+</body>
+</html>
