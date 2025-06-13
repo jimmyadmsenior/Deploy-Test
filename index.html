@@ -20,16 +20,16 @@
     <main>
         <section class="intro">
             <h2>O que é Deploy?</h2>
-            <p>Deploy é o processo de disponibilizar uma aplicação ou site para acesso público, geralmente em um servidor ou serviço de hospedagem. Um bom deploy garante que seu projeto esteja acessível, seguro e performático para os usuários.</p>
+            <p>Sabe aquele momento em que você termina um projeto e quer mostrar para o mundo? O deploy é justamente esse passo: colocar seu site ou app no ar, para qualquer pessoa acessar. Não é só jogar arquivos em um servidor — é garantir que tudo funcione, esteja seguro e rápido para quem for acessar. E sim, todo mundo já passou algum perrengue nessa etapa!</p>
         </section>
         <section class="guide">
             <h2>Guia Rápido de Deploy</h2>
             <ol>
-                <li>Escolha a plataforma de deploy adequada ao seu projeto.</li>
-                <li>Prepare os arquivos do seu site ou aplicação.</li>
-                <li>Configure o domínio (opcional).</li>
-                <li>Realize o upload ou conecte o repositório.</li>
-                <li>Teste o site publicado e monitore o funcionamento.</li>
+                <li>Pense no que seu projeto precisa: é só front-end? Tem backend? Precisa de banco de dados?</li>
+                <li>Deixe tudo pronto: arquivos organizados, dependências instaladas, aquele README caprichado.</li>
+                <li>Se quiser um domínio personalizado, já separa ele (mas não é obrigatório pra começar).</li>
+                <li>Hoje em dia, conectar o repositório no GitHub/Bitbucket/GitLab em plataformas como Vercel ou Netlify já resolve quase tudo.</li>
+                <li>Depois do deploy, sempre teste o site publicado. Nada de confiar só porque "deu build"!</li>
             </ol>
         </section>
         <section class="dashboard">
@@ -45,42 +45,43 @@
                     <tbody>
                         <tr>
                             <td>Startup com equipe de 5 devs</td>
-                            <td>Plataformas CI/CD 
+                            <td class="deploy-col">Plataformas CI/CD 
                                 <a class="badge" href="https://vercel.com/" target="_blank">Vercel</a> 
                                 <a class="badge" href="https://www.netlify.com/" target="_blank">Netlify</a> 
                                 <a class="badge" href="https://www.heroku.com/" target="_blank">Heroku</a> 
                                 <a class="badge" href="https://github.com/features/actions" target="_blank">GitHub Actions</a>
                             </td>
-                            <td>Automação, integração fácil com repositórios, escalabilidade e colaboração.</td>
+                            <td>Com time pequeno, ninguém quer perder tempo com configuração manual. Plataformas modernas automatizam tudo: fez push, já publica. E ainda dá para revisar cada versão antes de ir pro ar.</td>
                         </tr>
                         <tr>
                             <td>Estudante publicando o TCC</td>
-                            <td>Hospedagem gratuita 
+                            <td class="deploy-col">Hospedagem gratuita 
                                 <a class="badge" href="https://pages.github.com/" target="_blank">GitHub Pages</a> 
                                 <a class="badge" href="https://vercel.com/" target="_blank">Vercel</a> 
                                 <a class="badge" href="https://www.netlify.com/" target="_blank">Netlify</a>
                             </td>
-                            <td>Fácil de usar, gratuito, ideal para projetos pequenos e portfólios.</td>
+                            <td>Não quer gastar nada e precisa de praticidade? Essas opções são perfeitas para portfólios, TCCs e projetos pessoais. O deploy é quase automático e o resultado é profissional.</td>
                         </tr>
                         <tr>
                             <td>Empresas com sistema legado em PHP</td>
-                            <td>Hospedagem tradicional 
+                            <td class="deploy-col">Hospedagem tradicional 
                                 <a class="badge" href="https://cpanel.net/" target="_blank">cPanel</a> 
                                 <a class="badge" href="https://www.hostgator.com/" target="_blank">HostGator</a> 
                                 <a class="badge" href="https://www.locaweb.com.br/" target="_blank">Locaweb</a> 
-                                ou <a class="badge" href="https://www.docker.com/" target="_blank">Docker em VPS</a>
+                                <a class="badge" href="https://www.docker.com/" target="_blank">Docker em VPS</a>
                             </td>
-                            <td>Compatibilidade com PHP, facilidade de migração, suporte a sistemas antigos.</td>
+                            <td>Se o sistema já existe há anos, o melhor é não inventar moda: hospedagem tradicional resolve, sem surpresas. E se quiser modernizar, Docker pode ser um bom caminho.</td>
                         </tr>
                         <tr>
                             <td>Sistema complexo com vários desenvolvedores</td>
-                            <td>CI/CD avançado 
+                            <td class="deploy-col">
+                                <div style="margin-bottom: 8px; font-weight: bold; color: #393552;">CI/CD avançado</div>
                                 <a class="badge" href="https://www.jenkins.io/" target="_blank">Jenkins</a> 
                                 <a class="badge" href="https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/" target="_blank">GitLab CI</a> 
                                 <a class="badge" href="https://aws.amazon.com/codepipeline/" target="_blank">AWS CodePipeline</a> 
                                 <a class="badge" href="https://kubernetes.io/" target="_blank">Kubernetes</a>
                             </td>
-                            <td>Automação robusta, deploys controlados, escalabilidade, integração com microserviços.</td>
+                            <td>Quando o projeto é grande e envolve muita gente, automação é tudo. CI/CD robusto evita erro humano, garante controle de versões e facilita deploys frequentes sem dor de cabeça.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,11 +90,11 @@
         <section class="tips">
             <h2>Dicas e Melhores Práticas</h2>
             <ul>
-                <li>Mantenha backups regulares do seu projeto.</li>
-                <li>Utilize HTTPS para segurança.</li>
-                <li>Automatize o deploy sempre que possível (CI/CD).</li>
-                <li>Monitore o desempenho e disponibilidade do site.</li>
-                <li>Documente o processo de deploy para sua equipe.</li>
+                <li>Backup nunca é demais. Já perdi projeto por não ter um!</li>
+                <li>HTTPS não é luxo, é obrigação. Segurança em primeiro lugar.</li>
+                <li>Automatize o deploy sempre que puder. Menos chance de erro e mais tempo para codar.</li>
+                <li>Monitore o site depois de publicar. Às vezes, só descobrimos problemas quando alguém avisa.</li>
+                <li>Deixe tudo documentado. O "eu lembro como faz" não dura para sempre.</li>
             </ul>
         </section>
         <section class="links">

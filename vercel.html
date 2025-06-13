@@ -13,61 +13,64 @@
     <header class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <h1>Deploy com <span style="color:#9ccfd8">Vercel</span></h1>
+            <h1>Deploy com <span class="vercel-animated">Vercel</span></h1>
             <p>Entenda como funciona, vantagens, desvantagens e veja um exemplo prático!</p>
         </div>
     </header>
     <main>
         <section class="intro">
             <h2>O que é Vercel?</h2>
-            <p><b>Vercel</b> é uma plataforma de deploy focada em sites estáticos e aplicações modernas, como React, Next.js, Vue e outros. Ela automatiza o processo de publicação, tornando fácil e rápido colocar seu projeto online, diretamente a partir do seu repositório Git.</p>
+            <div style="display:flex;justify-content:center;align-items:center;margin-bottom:24px;">
+                <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Logo Vercel" style="width:80px;height:80px;border-radius:16px;box-shadow:0 2px 8px #23213644;">
+            </div>
+            <p style="margin-top:24px;">Se você já cansou de sofrer para colocar um site no ar, a Vercel pode ser sua melhor amiga. Ela é uma plataforma que deixa o deploy de projetos web (principalmente front-end) tão fácil que parece mágica. Sabe aquele projeto em React, Next.js ou até um site estático? Com a Vercel, você conecta seu repositório e, em poucos cliques, seu site já está online. Sem dor de cabeça, sem configuração chata.</p>
         </section>
         <section class="guide">
             <h2>Como funciona?</h2>
             <ol>
-                <li>Você conecta seu repositório (GitHub, GitLab ou Bitbucket) à Vercel.</li>
-                <li>Ao fazer push no repositório, a Vercel detecta as mudanças e executa o build automaticamente.</li>
-                <li>O site é publicado em poucos segundos, com URL própria e HTTPS.</li>
-                <li>É possível configurar domínios personalizados e variáveis de ambiente.</li>
+                <li>Primeiro, você faz login na Vercel e conecta seu GitHub, GitLab ou Bitbucket. É rapidinho.</li>
+                <li>Escolhe o repositório do seu projeto e a Vercel já entende como rodar o build (principalmente se for Next.js, que eles amam).</li>
+                <li>Fez um push? A Vercel já pega a nova versão, faz o build e publica. Você recebe um link pronto para compartilhar.</li>
+                <li>Quer usar seu próprio domínio ou configurar variáveis de ambiente? Tudo pelo painel, sem mistério.</li>
             </ol>
         </section>
         <section class="tips">
             <h2>Vantagens</h2>
             <ul>
-                <li>Deploy extremamente rápido e fácil, sem necessidade de configuração complexa.</li>
-                <li>Integração automática com Git.</li>
-                <li>Domínio gratuito com HTTPS incluso.</li>
-                <li>Preview automático para cada Pull Request.</li>
-                <li>Escalabilidade automática.</li>
+                <li>Deploy realmente rápido. Em menos de 1 minuto, seu site pode estar no ar.</li>
+                <li>Integração automática com Git: só de dar push, já publica.</li>
+                <li>HTTPS grátis e domínio vercel.app para todos os projetos.</li>
+                <li>Preview automático para cada Pull Request (ótimo para revisar antes de aprovar).</li>
+                <li>Escalabilidade sem você precisar pensar nisso. O site aguenta desde 10 até 10 mil acessos sem drama.</li>
             </ul>
             <h2>Desvantagens</h2>
             <ul>
-                <li>Limitações no plano gratuito (builds, bandwidth, funções serverless).</li>
-                <li>Menos flexível para projetos que exigem backend tradicional ou customizações avançadas de servidor.</li>
+                <li>O plano gratuito tem limites (builds, largura de banda, funções serverless). Para projetos grandes, pode ser necessário pagar.</li>
+                <li>Se seu projeto depende de backend tradicional ou precisa de configurações de servidor muito específicas, talvez a Vercel não seja o ideal.</li>
             </ul>
         </section>
         <section class="links">
             <h2>Exemplo prático e criativo</h2>
             <div style="background:#232136;padding:24px 18px;border-radius:12px;box-shadow:0 2px 8px #23213644;max-width:700px;margin:auto;">
-                <p><b>Imagine:</b> Você terminou seu portfólio em React. Basta subir o código no GitHub, conectar o repositório na Vercel e... pronto! Em menos de 1 minuto, seu site está online, com link próprio e pronto para ser compartilhado no LinkedIn. <br><br>
-                <span style="color:#f6c177;font-family:'JetBrains Mono',monospace;">git push origin main</span> &rarr; <span style="color:#9ccfd8;font-family:'JetBrains Mono',monospace;">vercel.com/dashboard</span> &rarr; <span style="color:#31748f;font-family:'JetBrains Mono',monospace;">Seu site publicado!</span>
+                <p><b>Meu caso real:</b> Eu tinha um portfólio em React parado no GitHub fazia meses. Um dia resolvi testar a Vercel. Conectei o repositório, cliquei em alguns botões e pronto: em menos de 1 minuto, o site estava online, com HTTPS e tudo. Não precisei configurar nada de servidor, DNS ou SSL. Só precisei compartilhar o link com amigos e pronto.<br><br>
+                <span style="color:#f6c177;font-family:'JetBrains Mono',monospace;">git push origin main</span> &rarr; <span style="color:#9ccfd8;font-family:'JetBrains Mono',monospace;">vercel.com/dashboard</span> &rarr; <span style="color:#31748f;font-family:'JetBrains Mono',monospace;">Site publicado, sem stress!</span>
                 </p>
                 <div style="margin-top:18px;text-align:center;">
-                    <a href="https://vercel.com/" target="_blank" class="badge" style="font-size:1.1em;">Acesse a Vercel</a>
+                    <a href="https://vercel.com/" target="_blank" class="badge" style="font-size:1.08em;">Acesse a Vercel</a>
                 </div>
             </div>
         </section>
         <section class="tips">
             <h2>Para quem é mais útil?</h2>
             <ul>
-                <li>Projetos front-end modernos (React, Next.js, Vue, Svelte, etc).</li>
-                <li>Portfólios, landing pages, blogs e sites institucionais.</li>
-                <li>Equipes pequenas, startups e desenvolvedores individuais que querem agilidade.</li>
-                <li>Projetos open source que precisam de deploy fácil e preview de PR.</li>
+                <li>Quem quer publicar portfólios, landing pages, blogs ou sites institucionais sem complicação.</li>
+                <li>Projetos em React, Next.js, Vue, Svelte e afins.</li>
+                <li>Desenvolvedores solo, freelancers, startups e equipes pequenas que querem agilidade.</li>
+                <li>Projetos open source que precisam de deploy fácil e preview de Pull Request para revisão.</li>
             </ul>
         </section>
         <div style="text-align:center;margin:32px 0 0 0;">
-            <a href="index.html" class="badge" style="font-size:1.1em;">&#8592; Voltar para o comparativo</a>
+            <a href="index.html" class="badge" style="font-size:1.08em;">&#8592; Voltar para o comparativo</a>
         </div>
     </main>
     <footer>
