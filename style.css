@@ -329,7 +329,7 @@ footer {
         font-size: 1.2rem;
     }
 }
-.intro, .guide, .tips, .links {
+.intro, .guide, .tips, .links, .references {
     max-width: 900px;
     margin: 32px auto 0 auto;
     background: #232136;
@@ -342,25 +342,25 @@ footer {
     line-height: 1.7;
     animation: fadeInUp 1.2s;
 }
-.intro h2, .guide h2, .tips h2, .links h2 {
+.intro h2, .guide h2, .tips h2, .links h2, .references h2 {
     color: #f6c177;
     font-size: 1.4rem;
     margin-bottom: 12px;
     font-family: 'JetBrains Mono', 'Fira Mono', 'Source Code Pro', monospace;
 }
-.guide ol, .tips ul, .links ul {
+.guide ol, .tips ul, .links ul, .references ul {
     margin-left: 24px;
     margin-top: 8px;
 }
-.guide li, .tips li, .links li {
+.guide li, .tips li, .links li, .references li {
     margin-bottom: 8px;
     font-size: 1.05rem;
 }
-.links a {
+.links a, .references a {
     color: #9ccfd8;
     text-decoration: underline;
     transition: color 0.2s;
 }
-.links a:hover {
+.links a:hover, .references a:hover {
     color: #f6c177;
 }
